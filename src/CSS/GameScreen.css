@@ -19,12 +19,8 @@
     -fx-background-color: #A43A4D;
 }
 
-
-
-#topPane, #botPane {
-    -fx-background-color: #8FA1E3;
+#paneBL, #paneTL, #paneTR {
+    -fx-background-color: #C1E3E9
+;
 }
 
-#canvasBL, #canvasBR, #canvasTL, #canvasTR, #grid {
-    -fx-background-color: #ffffff;
-}

@@ -4,11 +4,13 @@ package Controller;
 import Physics.Movement;
 import Physics.Time;
 import Sprite.Sphere;
+import javafx.animation.Interpolator;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
@@ -39,6 +41,8 @@ public class GameScreenController implements Initializable {
     private Pane paneBR;
     @FXML
     private static ImageView imageTest;
+    @FXML
+    private ImageView imageL;
 
 
     Timeline loop;
@@ -56,13 +60,13 @@ public class GameScreenController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        xySphere = new Sphere(750, 20,150, 15, Color.BLACK, 0, 10, 0, 1,0, 0, 0);
+        xySphere = new Sphere(750, 20,150, 15, Color.BLACK, 0, 20, 0, 1,0, 0, 0);
         paneTL.getChildren().add(xySphere);
 
-        xzSphere = new Sphere(750,20,150,15, Color.BLACK, 0,010,0,2,0,0,0);
+        xzSphere = new Sphere(750,20,150,15, Color.BLACK, 0,20,0,2,0,0,0);
         paneBL.getChildren().add(xzSphere);
 
-        yzSphere = new Sphere(750, 20, 150, 15, Color.BLACK, 0, 10, 0, 3,0,0,0);
+        yzSphere = new Sphere(750, 20, 150, 15, Color.BLACK, 0, 20, 0, 3,0,0,0);
         paneTR.getChildren().add(yzSphere);
 
         loop = new Timeline(new KeyFrame(Duration.seconds(frameTime), event -> {
@@ -86,12 +90,12 @@ public class GameScreenController implements Initializable {
                 new Movement(xySphere, xySphere, xzSphere, yzSphere);
                 new Movement(xzSphere, xySphere, xzSphere, yzSphere);
                 new Movement(yzSphere, xySphere, xzSphere, yzSphere);
+
+
             }
 
         }));
         loop.setCycleCount(Timeline.INDEFINITE);
-
-
 
     }
 
@@ -120,15 +124,15 @@ public class GameScreenController implements Initializable {
         Time.curTime = System.currentTimeMillis();
 
         xySphere.updatePos(750, 20, 150);
-        xySphere.updateVelocity(0, 10,0);
+        xySphere.updateVelocity(0, 20,0);
         xySphere.updateAccel(0,0,0);
 
         xzSphere.updatePos(750, 20, 150);
-        xzSphere.updateVelocity(0, 10,0);
+        xzSphere.updateVelocity(0, 20,0);
         xzSphere.updateAccel(0,0,0);
 
         yzSphere.updatePos(750, 20, 150);
-        yzSphere.updateVelocity(0, 10,0);
+        yzSphere.updateVelocity(0, 20,0);
         yzSphere.updateAccel(0,0,0);
 
     }

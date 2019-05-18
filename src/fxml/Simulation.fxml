@@ -15,7 +15,7 @@
    <children>
       <AnchorPane prefHeight="910.0" prefWidth="1210.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Pane fx:id="paneTL" prefHeight="500.0" prefWidth="800.0">
+            <Pane id="paneTL" fx:id="paneTL" prefHeight="500.0" prefWidth="800.0" stylesheets="@../CSS/GameScreen.css">
                <children>
                   <GridPane prefHeight="500.0" prefWidth="800.0">
                     <columnConstraints>
@@ -38,97 +38,97 @@
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/FreeFallColor.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario01.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                        <ImageView fx:id="imageL" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/FreeFallKurveXYColor.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario02.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/geradestreckeColor.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario04.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="2">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/geradestreckeColor.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario04.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/geradestreckeColor.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario05.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/geradestreckeColor.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario05.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/kurveyzColor.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario09.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/geradestreckeColor.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario10.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/rechtskurveColor.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario08.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/linkskurve.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario11.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/normalwindowColor02.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario07.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="4">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/normalwindowColor02.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario07.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/normalwindowColor02.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario06.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="4">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/normalwindowColor02.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario07.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/normalwindowColor02.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario06.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/normalwindowColor02.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario07.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="2">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/normalwindowColor02.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario03.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/normalwindowColor02.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario06.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="4">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/normalwindowColor02.png" />
+                              <Image url="@../BulletBillParkour%20Front/Mario07.png" />
                            </image>
                         </ImageView>
                         <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="100.0" text="Front (X - Y)">
@@ -136,11 +136,16 @@
                               <Font name="System Bold" size="15.0" />
                            </font>
                         </Label>
+                        <ImageView fitHeight="100.0" fitWidth="100.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../Icons/lakitu.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </GridPane>
                </children>
             </Pane>
-            <Pane fx:id="paneTR" layoutX="810.0" prefHeight="500.0" prefWidth="400.0">
+            <Pane id="paneTR" fx:id="paneTR" layoutX="810.0" prefHeight="500.0" prefWidth="400.0" stylesheets="@../CSS/GameScreen.css">
                <children>
                   <GridPane prefHeight="500.0" prefWidth="400.0">
                     <columnConstraints>
@@ -159,57 +164,57 @@
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
                            <image>
-                              <Image url="@../BulletBillParkour%20Left/01.png" />
+                              <Image url="@../BulletBillParkour%20Left/Mario01.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
                            <image>
-                              <Image url="@../BulletBillParkour%20Left/03.png" />
+                              <Image url="@../BulletBillParkour%20Left/Mario03.png" />
                            </image>
                         </ImageView>
                         <ImageView fx:id="imageTest" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <image>
-                              <Image url="@../BulletBillParkourTop/06.png" />
+                              <Image url="@../BulletBillParkour%20Left/Mario02.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
                            <image>
-                              <Image url="@../BulletBillParkour%20Left/04.png" />
+                              <Image url="@../BulletBillParkour%20Left/Mario04.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../BulletBillParkour%20Left/05.png" />
+                              <Image url="@../BulletBillParkour%20Left/Mario06.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../BulletBillParkour%20Left/06.png" />
+                              <Image url="@../BulletBillParkour%20Left/Mario08.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
                            <image>
-                              <Image url="@../BulletBillParkour%20Left/07.png" />
+                              <Image url="@../BulletBillParkour%20Left/Mario09.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
                            <image>
-                              <Image url="@../BulletBillParkour%20Left/08.png" />
+                              <Image url="@../BulletBillParkour%20Left/Mario10.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/normalwindowColor02.png" />
+                              <Image url="@../BulletBillParkour%20Left/Mario07.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/normalwindowColor02.png" />
+                              <Image url="@../BulletBillParkour%20Left/Mario07.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <image>
-                              <Image url="@../BulletBillParkour%20Front/normalwindowColor02.png" />
+                              <Image url="@../BulletBillParkour%20Left/Mario05%20normal.png" />
                            </image>
                         </ImageView>
                         <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="100.0" text="Side (Y - Z)" GridPane.columnIndex="3">
@@ -223,7 +228,7 @@
             </Pane>
             <Pane fx:id="paneBL" layoutY="510.0" prefHeight="400.0" prefWidth="800.0">
                <children>
-                  <GridPane prefHeight="400.0" prefWidth="800.0">
+                  <GridPane id="paneBL" prefHeight="400.0" prefWidth="800.0" stylesheets="@../CSS/GameScreen.css">
                     <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -243,67 +248,67 @@
                      <children>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7">
                            <image>
-                              <Image url="@../BulletBillParkourTop/02.png" />
+                              <Image url="@../BulletBillParkourTop/Mario02.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="1">
                            <image>
-                              <Image url="@../BulletBillParkourTop/01.png" />
+                              <Image url="@../BulletBillParkourTop/Mario01.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6">
                            <image>
-                              <Image url="@../BulletBillParkourTop/03.png" />
+                              <Image url="@../BulletBillParkourTop/Mario03ff.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
                            <image>
-                              <Image url="@../BulletBillParkourTop/03.png" />
+                              <Image url="@../BulletBillParkourTop/Mario03ff.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
                            <image>
-                              <Image url="@../BulletBillParkourTop/03.png" />
+                              <Image url="@../BulletBillParkourTop/Mario03ff.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
                            <image>
-                              <Image url="@../BulletBillParkourTop/03.png" />
+                              <Image url="@../BulletBillParkourTop/Mario03ff.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
                            <image>
-                              <Image url="@../BulletBillParkourTop/04.png" />
+                              <Image url="@../BulletBillParkourTop/Mario041ff.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
                            <image>
-                              <Image url="@../BulletBillParkourTop/05.png" />
+                              <Image url="@../BulletBillParkourTop/Mario05f.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <image>
-                              <Image url="@../BulletBillParkourTop/03.png" />
+                              <Image url="@../BulletBillParkourTop/Mario03f.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
                            <image>
-                              <Image url="@../BulletBillParkourTop/04.png" />
+                              <Image url="@../BulletBillParkourTop/Mario041f.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../BulletBillParkourTop/03.png" />
+                              <Image url="@../BulletBillParkourTop/Mario03fff.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
                            <image>
-                              <Image url="@../BulletBillParkourTop/07.png" />
+                              <Image url="@../BulletBillParkourTop/Mario08ff.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
                            <image>
-                              <Image url="@../BulletBillParkourTop/06.png" />
+                              <Image url="@../BulletBillParkourTop/Mario06f.png" />
                            </image>
                         </ImageView>
                         <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="100.0" text="Top (X - Z)">
@@ -319,7 +324,7 @@
                <children>
                   <ImageView fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../Icons/BG.png" />
+                        <Image url="@../Icons/color.png" />
                      </image>
                   </ImageView>
                   <Button id="playbtn" fx:id="playbtn" layoutX="99.0" layoutY="156.0" mnemonicParsing="false" onAction="#playGame" prefHeight="88.0" prefWidth="51.0" stylesheets="@../CSS/GameScreen.css">

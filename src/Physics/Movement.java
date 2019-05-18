@@ -41,6 +41,7 @@ public class Movement {
         double newY = startY + startVy * Time.timeFraction + 0.5 * startAy * (Time.timeFraction * Time.timeFraction);
         double newZ = startZ + startVz * Time.timeFraction + 0.5 * startAz * (Time.timeFraction * Time.timeFraction);
 
+
       //  double newVx = startVx + startAx * Time.timeFraction;
       //  double newVy = startVy + startAy * Time.timeFraction;
       //  double newVz = startVz + startAz * Time.timeFraction;
@@ -72,227 +73,226 @@ public class Movement {
          */
 
         if (sphere.getY0() > 137 && sphere.getY0() < 153 ) {
-            sphere.setVz(-10);
-            sphere.setVy(8);
+            sphere.setVz(-20);
+            sphere.setVy(16);
 
         }
         if (sphere.getY0() > 153) {
-            sphere.setVz(-10);
             sphere.setVy(0);
         }
 
         if (sphereXZ.getZ0() < 70) {
-            sphere.setVx(-5);
-            sphere.setVz(-8);
-            sphere.setVy(1);
+            sphere.setVx(-10);
+            sphere.setVz(-16);
+            sphere.setVy(2);
         }
 
         if (sphereXZ.getZ0() < 65) {
-            sphere.setVx(-6);
-            sphere.setVz(-6);
-            sphere.setVy(3);
+            sphere.setVx(-24);
+            sphere.setVz(-24);
+            sphere.setVy(12);
         }
 
         if (sphereXZ.getZ0() < 60) {
-            sphere.setVx(-7);
-            sphere.setVz(-4);
-            sphere.setVy(5);
+            sphere.setVx(-14);
+            sphere.setVz(-8);
+            sphere.setVy(10);
         }
 
         if (sphereXZ.getZ0() < 55) {
-            sphere.setVx(-8);
-            sphere.setVz(-2);
-            sphere.setVy(4);
+            sphere.setVx(-16);
+            sphere.setVz(-4);
+            sphere.setVy(8);
         }
 
 
         if (sphereXZ.getZ0() < 50) {
-            sphere.setVx(-10);
+            sphere.setVx(-20);
             sphere.setVz(0);
-            sphere.setVy(2);
+            sphere.setVy(4);
         }
 
         if (sphereXY.getX0() < 705){
             sphere.setVy(0);
-            sphere.setVx(-8);
+            sphere.setVx(-16);
 
         }
 
         if (sphereXY.getX0() < 695) {
-            sphere.setVy(2);
-            sphere.setVx(-7);
+            sphere.setVy(4);
+            sphere.setVx(-14);
         }
 
         if (sphereXY.getX0() < 685) {
-            sphere.setVy(5);
-            sphere.setVx(-6);
+            sphere.setVy(10);
+            sphere.setVx(-12);
         }
 
         if (sphereXY.getX0() < 675) {
-            sphere.setVy(7);
-            sphere.setVx(-4);
+            sphere.setVy(14);
+            sphere.setVx(-8);
         }
 
         if (sphereXY.getY0() > 205) {
             sphere.setVy(0);
-            sphere.setVx(-8);
+            sphere.setVx(-16);
         }
 
         // Gerade strecke - Fall auf gerade Strecke
 
         if (sphereXY.getX0() < 495) {
-            sphere.setVy(1);
+            sphere.setVy(2);
 
         }
         if (sphereXY.getX0() < 490) {
-            sphere.setVy(2);
+            sphere.setVy(4);
 
         }
 
         if (sphereXY.getX0() < 485) {
-            sphere.setVy(2);
+            sphere.setVy(4);
 
         }
 
         if (sphereXY.getX0() < 480) {
-            sphere.setVy(3);
+            sphere.setVy(6);
 
         }
 
         if (sphereXY.getX0() < 475) {
-            sphere.setVy(4);
-            sphere.setVx(-7);
+            sphere.setVy(8);
+            sphere.setVx(-14);
         }
 
         if (sphereXY.getX0() < 470) {
-            sphere.setVy(5);
-            sphere.setVx(-6);
+            sphere.setVy(10);
+            sphere.setVx(-12);
         }
 
         if (sphereXY.getX0() < 465) {
-            sphere.setVy(9);
-            sphere.setVx(-5);
+            sphere.setVy(18);
+            sphere.setVx(-10);
         }
 
         //Ball prallt auf (ohne Kollision)
 
         if (sphereXY.getY0() > 305) {
             sphere.setVy(0);
-            sphere.setVx(-8);
+            sphere.setVx(-16);
         }
 
         // Ball macht links Kurve
 
         if (sphereXY.getX0() < 300) {
             sphere.setVz(0);
-            sphere.setVx(-10);
+            sphere.setVx(-20);
         }
 
         if (sphereXY.getX0() < 290) {
-            sphere.setVz(2);
-            sphere.setVx(-8);
+            sphere.setVz(4);
+            sphere.setVx(-16);
         }
 
         if (sphereXY.getX0() < 280) {
-            sphere.setVz(4);
-            sphere.setVx(-7);
+            sphere.setVz(8);
+            sphere.setVx(-14);
         }
 
         if (sphereXY.getX0() < 270) {
-            sphere.setVz(6);
-            sphere.setVx(-6);
+            sphere.setVz(12);
+            sphere.setVx(-12);
         }
 
         if (sphereXY.getX0() < 260) {
-            sphere.setVz(8);
-            sphere.setVx(-4);
+            sphere.setVz(16);
+            sphere.setVx(-8);
         }
 
         if (sphereXY.getX0() < 250) {
-            sphere.setVz(10);
+            sphere.setVz(20);
             sphere.setVx(0);
         }
 
         // Ball fällt durch Loch in Kurve
 
         if (sphereYZ.getZ0() > 130 && sphereYZ.getY0() > 300) {
-            sphere.setVz(8);
-            sphere.setVy(2);
-        }
-
-        if (sphereYZ.getZ0() > 135 && sphereYZ.getY0() > 300) {
-            sphere.setVz(6);
+            sphere.setVz(16);
             sphere.setVy(4);
         }
 
+        if (sphereYZ.getZ0() > 135 && sphereYZ.getY0() > 300) {
+            sphere.setVz(12);
+            sphere.setVy(8);
+        }
+
         if (sphereYZ.getZ0() > 140 && sphereYZ.getY0() > 300) {
-            sphere.setVz(4);
-            sphere.setVy(6);
+            sphere.setVz(8);
+            sphere.setVy(12);
         }
 
         if (sphereYZ.getZ0() > 145 && sphereYZ.getY0() > 300) {
-            sphere.setVz(2);
-            sphere.setVy(8);
+            sphere.setVz(4);
+            sphere.setVy(16);
         }
 
         if (sphereYZ.getZ0() > 150 && sphereYZ.getY0() > 300) {
             sphere.setVz(0);
-            sphere.setVy(10);
+            sphere.setVy(20);
         }
 
         // Kurve nach Fall
 
         if (sphereYZ.getY0() > 337) {
-            sphere.setVy(6);
-            sphere.setVz(4);
+            sphere.setVy(12);
+            sphere.setVz(8);
         }
 
         if (sphereYZ.getY0() > 340) {
-            sphere.setVy(5);
-            sphere.setVz(5);
+            sphere.setVy(10);
+            sphere.setVz(10);
         }
 
         if (sphereYZ.getY0() > 345) {
-            sphere.setVy(4);
-            sphere.setVz(7);
+            sphere.setVy(8);
+            sphere.setVz(14);
         }
 
         if (sphereYZ.getY0() > 354) {
-            sphere.setVy(1);
-            sphere.setVz(9);
+            sphere.setVy(2);
+            sphere.setVz(18);
         }
 
         if (sphereYZ.getY0() > 355) {
             sphere.setVy(0);
-            sphere.setVz(10);
+            sphere.setVz(20);
         }
 
         // Kleiner freier Fall
 
 
         if (sphereYZ.getZ0() > 200 && sphereYZ.getY0() > 300) {
-            sphere.setVz(8);
-            sphere.setVy(2);
-        }
-
-        if (sphereYZ.getZ0() > 210 && sphereYZ.getY0() > 300) {
-            sphere.setVz(6);
+            sphere.setVz(16);
             sphere.setVy(4);
         }
 
+        if (sphereYZ.getZ0() > 210 && sphereYZ.getY0() > 300) {
+            sphere.setVz(12);
+            sphere.setVy(8);
+        }
+
         if (sphereYZ.getZ0() > 220 && sphereYZ.getY0() > 300) {
-            sphere.setVz(4);
-            sphere.setVy(6);
+            sphere.setVz(8);
+            sphere.setVy(12);
         }
 
         if (sphereYZ.getZ0() > 230 && sphereYZ.getY0() > 300) {
-            sphere.setVz(2);
-            sphere.setVy(8);
+            sphere.setVz(4);
+            sphere.setVy(16);
         }
 
         if (sphereYZ.getZ0() > 240 && sphereYZ.getY0() > 300) {
             sphere.setVz(0);
-            sphere.setVy(10);
+            sphere.setVy(20);
         }
 
         //Sofortige Rechts Kurve nach kleinem Fall
@@ -300,67 +300,67 @@ public class Movement {
 
         if (sphereYZ.getY0() > 405) {
             sphere.setVy(0);
-            sphere.setVz(5);
-            sphere.setVx(-5);
+            sphere.setVz(10);
+            sphere.setVx(-10);
         }
 
         if (sphereYZ.getZ0() > 250 && sphereYZ.getY0() > 400 ) {
             sphere.setVz(0);
-            sphere.setVx(-10);
+            sphere.setVx(-20);
         }
 
         // Nächste Kurve
 
         if (sphereXZ.getX0() < 90) {
-            sphere.setVx(-10);
-            sphere.setVz(2);
-        }
-
-        if (sphereXZ.getX0() < 80) {
-            sphere.setVx(-6);
+            sphere.setVx(-20);
             sphere.setVz(4);
         }
 
+        if (sphereXZ.getX0() < 80) {
+            sphere.setVx(-12);
+            sphere.setVz(8);
+        }
+
         if (sphereXZ.getX0() < 70) {
-            sphere.setVx(-6);
-            sphere.setVz(6);
+            sphere.setVx(-21);
+            sphere.setVz(12);
         }
 
         if (sphereXZ.getX0() < 60) {
-            sphere.setVx(-4);
-            sphere.setVz(8);
+            sphere.setVx(-8);
+            sphere.setVz(16);
         }
 
         if (sphereXZ.getX0() < 50) {
             sphere.setVx(-0);
-            sphere.setVz(10);
+            sphere.setVz(20);
         }
 
         // next curve
 
         if (sphereXZ.getZ0() > 310) {
-            sphere.setVz(10);
-            sphere.setVx(2);
-        }
-
-        if (sphereXZ.getZ0() > 320) {
-            sphere.setVz(6);
+            sphere.setVz(20);
             sphere.setVx(4);
         }
 
+        if (sphereXZ.getZ0() > 320) {
+            sphere.setVz(12);
+            sphere.setVx(8);
+        }
+
         if (sphereXZ.getZ0() > 330) {
-            sphere.setVz(6);
-            sphere.setVx(6);
+            sphere.setVz(12);
+            sphere.setVx(12);
         }
 
         if (sphereXZ.getZ0() > 340) {
-            sphere.setVz(4);
-            sphere.setVx(8);
+            sphere.setVz(8);
+            sphere.setVx(16);
         }
 
         if (sphereXZ.getZ0() > 350) {
             sphere.setVz(0);
-            sphere.setVx(10);
+            sphere.setVx(20);
         }
 
 
